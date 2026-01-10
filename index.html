@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeLink</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/icon.png">
 </head>
 <body>
-    
+    <div class="container">
+
+        <div class="input-section">
+            <h1>DeLink</h1>
+            <p>Paste a link and it will be cleaned automatically.</p>
+
+            <div class="input-wrapper">
+                <input type="text" id="linkInput" placeholder="Type or paste a link..." autocomplete="off" />
+                <button id="clearBtn" class="clearBtn hidden" title="Clear"> ✕ </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-section"></div>
+    <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,2 +1,4 @@
 # DeLink
-Link/Url Cleaner removes the unnecessary parts, leaving the page's original Link
+DeLink is a simple URL cleaner that removes tracking and unnecessary parameters, leaving the original link. 
+
+Inspired by popular link cleaner project.

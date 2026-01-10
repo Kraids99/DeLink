@@ -1,4 +1,24 @@
 /* input */
+@import url("input.css");
 
 /* footer */
 @import url("footer.css");
+
+body {
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    background: #1f232a;
+    color: white;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    align-items: center;
+}

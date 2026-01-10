@@ -1,0 +1,61 @@
+.input-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.input-section h1 {
+    margin-bottom: 10px;
+    font-size: 52px;
+    color: white;
+}
+
+.input-section p {
+    margin-bottom: 50px;
+    color: #aaa;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 14px 44px 14px 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #3a3f47;
+    background: #262b33;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #5da9ff;
+}
+
+.clearBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#clearBtn {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.clearBtn:hover {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
