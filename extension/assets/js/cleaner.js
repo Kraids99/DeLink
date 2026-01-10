@@ -6,7 +6,7 @@ import {
     webtoonLink,
     aniwatchLink,
     sitkulLink
-} from './rules/index.js';
+} from './assets/js/rules/index.js';
 
 export function cleanLink(input) {
     let url;
@@ -14,10 +14,14 @@ export function cleanLink(input) {
     try {
         url = new URL(input);
     } catch {
-        return console.log('Invalid URL, try again...'); 
+        return console.log('Invalid URL, try again...');
     }
 
     const host = url.hostname;
+
+    if (host === 'play.google.com') {
+        return googleplayLink(url);
+    }
 
     if (host.includes('google.com')) {
         return googleLink(url);
@@ -31,10 +35,6 @@ export function cleanLink(input) {
         return facebookLink(url);
     }
 
-    if (host === 'play.google.com') {
-        return googleplayLink(url);
-    }
-
     if (host.includes('webtoons.com')) {
         return webtoonLink(url);
     }
@@ -43,8 +43,7 @@ export function cleanLink(input) {
         return aniwatchLink(url);
     }
 
-    if (host.includes('kuliah.uajy.ac.id'))
-    {
+    if (host.includes('kuliah.uajy.ac.id')) {
         return sitkulLink(url);
     }
 
