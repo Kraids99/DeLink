@@ -4,7 +4,8 @@ import {
     facebookLink,
     googleplayLink,
     webtoonLink,
-    aniwatchLink
+    aniwatchLink,
+    sitkulLink
 } from './rules/index.js';
 
 export function cleanLink(input) {
@@ -40,6 +41,11 @@ export function cleanLink(input) {
 
     if (host.includes('aniwatch.to')) {
         return aniwatchLink(url);
+    }
+
+    if (host.includes('kuliah.uajy.ac.id'))
+    {
+        return sitkulLink(url);
     }
 
     return new URL(url.origin + url.pathname).toString();
