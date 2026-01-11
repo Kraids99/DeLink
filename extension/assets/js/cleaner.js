@@ -6,7 +6,7 @@ import {
     webtoonLink,
     aniwatchLink,
     sitkulLink
-} from './assets/js/rules/index.js';
+} from './rules/index.js';
 
 export function cleanLink(input) {
     let url;
